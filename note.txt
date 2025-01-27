@@ -6,3 +6,5 @@ easy to make routing => create folder in app as you like. e.g., services, about,
 
 <Link href="/about">About</Link> ==> Next.js provide the Link tag for automatic render to e.g. /about as About Page.
 
+if you make nexted routing in next.js ==> you will create new folder and create page.js into new folder. services > web-development > html > etc. It is neccessary for href attribute of Link tag you have to write full path of routing e.g., "/services/web-development/html".
+
