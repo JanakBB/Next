@@ -8,3 +8,9 @@ easy to make routing => create folder in app as you like. e.g., services, about,
 
 if you make nexted routing in next.js ==> you will create new folder and create page.js into new folder. services > web-development > html > etc. It is neccessary for href attribute of Link tag you have to write full path of routing e.g., "/services/web-development/html".
 
+props is simple object. props have two Promise that are params and searchParams. params and searchParams is default value is empty {}.
+
+If you put localhost:3000/?name=Janak, you will get searchParams value {name: "Janak"}
+
+
+
