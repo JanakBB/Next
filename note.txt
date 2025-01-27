@@ -1,0 +1,8 @@
+ssr = server side rendered
+
+app> layout.js ==> if you write something into layout.js, it appears into browser dom.
+
+easy to make routing => create folder in app as you like. e.g., services, about, etc.
+
+<Link href="/about">About</Link> ==> Next.js provide the Link tag for automatic render to e.g. /about as About Page.
+
