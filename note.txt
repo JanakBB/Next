@@ -10,7 +10,13 @@ if you make nexted routing in next.js ==> you will create new folder and create 
 
 props is simple object. props have two Promise that are params and searchParams. params and searchParams is default value is empty {}.
 
-If you put localhost:3000/?name=Janak, you will get searchParams value {name: "Janak"}
+If you put localhost:3000/?name=Janak&age=33&address=Kanchanpur, you will get searchParams value {name: "Janak", age= 33, address= "Kanchanpur"}
+
+if you create [blog] folder into blogs folder and give localhost:3000/blogs/1, you will get params: {blog: "1"}.It's neccessary make async function and await params for getting parmas value. [blog] called slag.
+
+blogs is main route, after it you have [blog] that is dynamic route. In the [blog] dynamic route you can create another normal route comments, aslo you can create another dynamic route into comments like [comments]. You can do so on continuously. And you can get all params facilities into [comment] route. if you give localhost://3000/blogs/mobile/comments/1 after that you do console.log(await params), you will get {blog: "mobile", comment: "1"}. blogs and comments is normal route and [blog] and [comment] is dynamic route.
+
+
 
 
 
