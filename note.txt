@@ -16,6 +16,15 @@ if you create [blog] folder into blogs folder and give localhost:3000/blogs/1, y
 
 blogs is main route, after it you have [blog] that is dynamic route. In the [blog] dynamic route you can create another normal route comments, aslo you can create another dynamic route into comments like [comments]. You can do so on continuously. And you can get all params facilities into [comment] route. if you give localhost://3000/blogs/mobile/comments/1 after that you do console.log(await params), you will get {blog: "mobile", comment: "1"}. blogs and comments is normal route and [blog] and [comment] is dynamic route.
 
+Catch All Route
+----------------
+At first create new route [files] ==> This is normal route
+Inside the [files] you create [[...file]] ==> This is optional Dynamic Route.
+Inside the [[..file]]'s page.js, if you console("filePath: ", await params), you will get: localhost:3000/files -> filePath: {} or localhost:3000/files/a/b/c/d/e/f -> filePath: {file: ['a', 'b', 'c', 'd', 'e', 'f']}.
+You can not directly creat this type [[...file]] route on app directory because it means app's page.js file.
+One try case: at first create [[...temp]] on app directory and delete app's page.js file. Its work instead of app's page.js file.
+After look at you will undo the app's page.js file. Ok?
+
 
 
 
