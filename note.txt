@@ -25,6 +25,13 @@ You can not directly creat this type [[...file]] route on app directory because 
 One try case: at first create [[...temp]] on app directory and delete app's page.js file. Its work instead of app's page.js file.
 After look at you will undo the app's page.js file. Ok?
 
+Building Reusable layout
+------------------------
+Delete unneccessary default code of app's layout.js. After the delete add header and footer elements. -> It works for all route footer and header.
+You can make layout.js in every directory such as we add in services's directory. Inside the services's layout.js. In the layout.js file we can add header and footer. -> It gives header and footer in all services route.
+
+
+
 
 
 
