@@ -30,7 +30,13 @@ Building Reusable layout
 Delete unneccessary default code of app's layout.js. After the delete add header and footer elements. -> It works for all route footer and header.
 You can make layout.js in every directory such as we add in services's directory. Inside the services's layout.js. In the layout.js file we can add header and footer. -> It gives header and footer in all services route.
 
-
+MetaData
+--------
+In app's layout.js file you should establish metadata. metadata have a lot of features e.g., title, description, url, siteName, images, videos, audio, local, type, etc.
+API Reference -> generateMetadata gives features about route {params} object and you should apply in generateMetadata as return title: `` string.
+If we make it dynamic we should apply in title emplete: " %s | TitleName ", default: " TitleName "
+In simple router we should apply absolute title name. -> title: {absolute: "Absolute Name"} -> It replaces the app's layout.js original title name.
+Description makes our website SEO. We can see in head tag about described words.
 
 
 

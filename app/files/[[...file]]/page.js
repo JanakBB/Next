@@ -1,3 +1,7 @@
+export const metadata = {
+    title: "Files"
+}
+
 export default async function file({params}){
     console.log("filePath: ", await params)
     const {file} = await params
