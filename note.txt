@@ -38,6 +38,18 @@ If we make it dynamic we should apply in title emplete: " %s | TitleName ", defa
 In simple router we should apply absolute title name. -> title: {absolute: "Absolute Name"} -> It replaces the app's layout.js original title name.
 Description makes our website SEO. We can see in head tag about described words.
 
+Not Found Page
+--------------
+app > not-found.js -> it works for all routes.
+dynamic nexted route > [blogs] -> not-found.js -> it works for only blogs route.
+notfound() fn is also nevigate into default page not found page.
+add "use client" feature in not-found after that usePathename() import from "next/navigation" then you will give path name route name in this function because no-found route does not give {params} feature.
+
+
+
+
+
+
 
 
 
