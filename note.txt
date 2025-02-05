@@ -45,6 +45,13 @@ dynamic nexted route > [blogs] -> not-found.js -> it works for only blogs route.
 notfound() fn is also nevigate into default page not found page.
 add "use client" feature in not-found after that usePathename() import from "next/navigation" then you will give path name route name in this function because no-found route does not give {params} feature.
 
+Route Group
+-----------
+In app we can create seperate route group like this (application), (auth), (marketing).
+Its easy to make own layout.js and all in all route in the group route carry the group route's layout design.
+
+
+
 
 
 
