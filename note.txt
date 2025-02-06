@@ -50,7 +50,10 @@ Route Group
 In app we can create seperate route group like this (application), (auth), (marketing).
 Its easy to make own layout.js and all in all route in the group route carry the group route's layout design.
 
-
+Private Folders
+---------------
+If you want creat component or private directory into the app directory you should directory name starts from _, for example app > _component. Otherwise outside of app directory you also should create private folder or directory without any rules, for example inside the home directory > component.
+Inside the private directory you should apply any type of name of every file. Its not neccessary page.js or layout.js or route.js.
 
 
 
