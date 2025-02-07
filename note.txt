@@ -55,6 +55,24 @@ Private Folders
 If you want creat component or private directory into the app directory you should directory name starts from _, for example app > _component. Otherwise outside of app directory you also should create private folder or directory without any rules, for example inside the home directory > component.
 Inside the private directory you should apply any type of name of every file. Its not neccessary page.js or layout.js or route.js.
 
+different between vite and next app
+-----------------------------------
+vite render client side server
+next is rendering time server side render after render client side server
+vite files after build give us one index file, one css file and one js file of whole file.
+next file after build give us various html file of each routes and various files of css, js, etc.
+Similarly loading the next.js code into browser we found in network tab:
+a. localhost
+b. webpack##########
+c. css#########
+d. js###########
+e. page#########
+f. blogs?_rsc=59c3v
+g. about?_rsc=59c3v
+h. services?_rsc=59c3v
+
+
+
 
 
 
