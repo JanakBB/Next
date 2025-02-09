@@ -71,7 +71,24 @@ f. blogs?_rsc=59c3v
 g. about?_rsc=59c3v
 h. services?_rsc=59c3v
 
+Static vs Dynamic rendering
+---------------------------
+I add inside add anurag sing procodrr code
+In app > about, blogs, services routes
+In blogs > [blog]
+The blogs route is simple route, inside bloges > page.js file:
+ a. Simple nav
+ b. Blog 1, Blog 2 and Blog 3
+In [blog] > this is dynamic route:
+ a. We need generateStaticParams f() for generating static site rendering.
+  1. If we have few blog type files then we should creat [] and apply {}'s 
+  2. If we have a lot of blogs than we need json data, so we should fetch json data and apply map function for create the bunch of {}'s inside the array
+  3. both case we have to return [] from the f().
+ b. For building the created code we should cmd in terminal: npm run build.
+ c. After build, we can apply cmd in terminal: npm start
+ d. In the brower network pannel we have bunch of files, as static and dynamic types.
 
+ 
 
 
 
