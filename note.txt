@@ -88,6 +88,14 @@ In [blog] > this is dynamic route:
  c. After build, we can apply cmd in terminal: npm start
  d. In the brower network pannel we have bunch of files, as static and dynamic types.
 
+ dynamicParams
+ -------------
+ it stops the create the route dynamicall after build the code. Especially during the dyanmically route exclude the generateStaticParams.
+ export const dynamicParams = false
+ if you give http://localhost:3000/blogs/1-200 -> its work because it has created in static site generation.
+ if you give http://localhost:3000/blogs/above the 200 -> browser show page not found 404 bacause export const dynamicParams = false stops the create new dyanmically page.
+
+ 
  
 
 

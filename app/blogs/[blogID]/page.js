@@ -1,20 +1,12 @@
 import Link from "next/link";
 
-export async function generateStaticParams(){
-  const response = await fetch('https://jsonplaceholder.typicode.com/todos')
-  const data = await response.json()
-  console.log(data)
-  return data.map(({id}) => ({blogID: `${id}`}))
+export const dynamicParams = false;
 
-  // return [
-  //   {blogID: "1"},
-  //   {blogID: "2"},
-  //   {blogID: "3"},
-  //   {blogID: "4"},
-  //   {blogID: "5"},
-  // ]
+export async function generateStaticParams() {
+  const response = await fetch("https://jsonplaceholder.typicode.com/todos");
+  const data = await response.json();
+  return data.map(({ id }) => ({ blogID: `${id}` }));
 }
-
 
 const Blogs = async ({ params }) => {
   const { blogID } = await params;
@@ -54,7 +46,3 @@ const Blogs = async ({ params }) => {
 };
 
 export default Blogs;
-
-
-
-
